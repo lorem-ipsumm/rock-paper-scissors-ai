@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css?family=Karla&display=swap");
+.App {
+  background-color: #ebebeb;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  font-family: 'Karla', sans-serif;
+}
+
+header {
+  color: #040403;
+  font-size: 20pt;
+  font-weight: bold;
+}
+
+.button-container {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 50px 0px;
+}
+
+.choice-button {
+  min-width: 100px;
+  min-height: 100px;
+  max-width: 100px;
+  max-height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px 10px;
+  border-radius: 100%;
+  border: 0px;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  outline: none;
+  border: none;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+}
+
+.choice-button:focus {
+  outline: none;
+}
+
+.choice-button::-moz-focus-inner {
+  border: 0px;
+}
+
+.choice-button img {
+  width: 45%;
+}
+
+.choice-button.active {
+  outline-style: none;
+  -moz-outline-style: none;
+  background-color: #5988ba;
+  -webkit-transform: rotate(10deg) scale(0.9);
+          transform: rotate(10deg) scale(0.9);
+}
+
+.shift {
+  padding-right: 4px;
+}
+
+.matrix-container {
+  margin-top: 20px;
+  color: #040403;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.matrix-container span {
+  display: block;
+}
+
+.win-loss-container {
+  width: 100%;
+  margin: 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #040403;
+}
+
+.response {
+  color: #040403;
+  margin-bottom: 30px;
+}
+
+.response.win {
+  color: #0cce6b;
+}
+
+.response.lose {
+  color: #ef2d56;
+}
+
+.response.tie {
+  color: #5988ba;
+}
+
+.win-loss-container span {
+  color: #040403;
+  margin: 0px 20px;
+}
+/*# sourceMappingURL=app.css.map */
