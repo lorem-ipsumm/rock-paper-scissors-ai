@@ -9,8 +9,22 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #040403;
   font-family: 'Karla', sans-serif;
+}
+
+p{
+  display: block;
+  width: 300px;
+  font-size: 10pt;
+  text-align: center;
+  line-height: 20px; 
+}
+
+// bad naming smh
+.header{
+  position: absolute;
+  top: 50px;;
 }
 
 header{
@@ -69,6 +83,58 @@ header{
   padding-right: 4px;
 }
 
+
+.credits-container {
+  display: flex;
+  align-items: center;
+  font-size: 10pt;
+  color: #040403;
+  position: absolute;
+  bottom: 10px;
+
+  .divider{
+    width: 3px;
+    height: 3px;
+    transform: translateY(2px);
+    margin: 0px 10px;
+    background-color: black;
+  }
+
+  
+}
+
+a{
+  color: #5988ba; 
+  position: relative;
+  text-decoration: none;
+
+  &:after{
+    content: '';
+    position: absolute;
+    background-color: #5988ba;
+    width: 10%;
+    height: 1px;
+    bottom: 0;
+    animation: slide 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    left: 0;
+    width: 100%;
+  }
+}
+
+@keyframes slide{
+  0%{
+    background-color: #5988ba;
+  }
+  50% {
+    background-color: #ebebeb;
+  }
+  100% {
+    background-color: #5988ba;
+  }
+}
 .matrix-container{
   margin-top: 20px;
   color: #040403;

@@ -260,9 +260,15 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-        <header>
-          Rock Paper Scissors!
-        </header>
+        <div className="header">
+          <header>
+            Rock Paper Scissors!
+          </header> 
+          <p>
+            This is a simple rock paper scissors bot that "learns" how you play by using <a href="https://en.wikipedia.org/wiki/Markov_chain">markov chains</a>.
+            It doesn't always win, but it's trying it's best!
+          </p>
+        </div>
         <div className="button-container">
           <button className="choice-button" onClick={e => this.button_clicked(e,"rock")}>
             <img src={rock} alt="rock"/>
@@ -285,6 +291,13 @@ class App extends Component {
             Losses: {this.state.losses}
           </span>
         </div>
+          
+          <div className="credits-container">
+          <span>Made by <a href="http://nickmorris.life">Nick Morris</a> </span>
+          <div className="divider"></div>
+          <span><a href="https://github.com/MickNorris/rock-paper-scissors-ai">Code on Github</a></span>
+        </div>
+
       </div>
     );
   }

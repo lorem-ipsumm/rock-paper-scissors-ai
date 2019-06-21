@@ -16,8 +16,21 @@
       -ms-flex-pack: center;
           justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #040403;
   font-family: 'Karla', sans-serif;
+}
+
+p {
+  display: block;
+  width: 300px;
+  font-size: 10pt;
+  text-align: center;
+  line-height: 20px;
+}
+
+.header {
+  position: absolute;
+  top: 50px;
 }
 
 header {
@@ -88,6 +101,77 @@ header {
 
 .shift {
   padding-right: 4px;
+}
+
+.credits-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 10pt;
+  color: #040403;
+  position: absolute;
+  bottom: 10px;
+}
+
+.credits-container .divider {
+  width: 3px;
+  height: 3px;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+  margin: 0px 10px;
+  background-color: black;
+}
+
+a {
+  color: #5988ba;
+  position: relative;
+  text-decoration: none;
+}
+
+a:after {
+  content: '';
+  position: absolute;
+  background-color: #5988ba;
+  width: 10%;
+  height: 1px;
+  bottom: 0;
+  -webkit-animation: slide 3s;
+          animation: slide 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  left: 0;
+  width: 100%;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    background-color: #5988ba;
+  }
+  50% {
+    background-color: #ebebeb;
+  }
+  100% {
+    background-color: #5988ba;
+  }
+}
+
+@keyframes slide {
+  0% {
+    background-color: #5988ba;
+  }
+  50% {
+    background-color: #ebebeb;
+  }
+  100% {
+    background-color: #5988ba;
+  }
 }
 
 .matrix-container {
