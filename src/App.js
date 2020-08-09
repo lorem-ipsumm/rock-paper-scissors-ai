@@ -291,10 +291,7 @@ class App extends Component {
             Losses: {this.state.losses}
           </span>
         </div>
-          
           <div className="credits-container">
-          <span>Made by <a href="http://nickmorris.life">Nick Morris</a> </span>
-          <div className="divider"></div>
           <span><a href="https://github.com/MickNorris/rock-paper-scissors-ai">Code on Github</a></span>
         </div>
 
