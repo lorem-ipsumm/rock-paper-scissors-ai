@@ -1,14 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
 
+#root, html, body, .App{
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #ebebeb;
+}
 
 .App {
-  background-color: #ebebeb;
-  min-height: 100vh;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  // justify-content: center;
+  // font-size: calc(10px + 2vmin);
+  font-size: 15pt;
   color: #040403;
   font-family: 'Karla', sans-serif;
 }
@@ -16,22 +22,29 @@
 p{
   display: block;
   width: 300px;
-  font-size: 10pt;
+  font-size: 12pt;
   text-align: center;
   line-height: 20px; 
 }
 
 // bad naming smh
 .header{
-  position: absolute;
+  // position: absolute;
+  margin-top: 30px;
   top: 50px;;
+  p {
+    display: block;
+    margin-left: 9px;
+    margin-bottom: 40px;
+  }
 }
 
 header{
   color: #040403;
-  font-size: 20pt;
+  font-size: 23pt;
   font-weight: bold;
   text-align: center;
+  
 }
 
 
@@ -105,7 +118,7 @@ header{
 }
 
 a{
-  color: #5988ba; 
+  color: #3f6894; 
   position: relative;
   text-decoration: none;
 
@@ -158,11 +171,13 @@ a{
 
 .response{
   color: #040403;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
+  font-size: 16pt;
+  margin-top: 30px;
 
   // player wins
   &.win{
-    color: #0cce6b; 
+    color: #239b5d; 
   }
 
   // player loses

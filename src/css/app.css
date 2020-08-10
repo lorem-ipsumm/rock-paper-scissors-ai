@@ -1,7 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Karla&display=swap");
-.App {
-  background-color: #ebebeb;
+#root, html, body, .App {
+  min-width: 100vw;
   min-height: 100vh;
+  background-color: #ebebeb;
+}
+
+.App {
+  height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,10 +18,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 15pt;
   color: #040403;
   font-family: 'Karla', sans-serif;
 }
@@ -23,20 +26,27 @@
 p {
   display: block;
   width: 300px;
-  font-size: 10pt;
+  font-size: 12pt;
   text-align: center;
   line-height: 20px;
 }
 
 .header {
-  position: absolute;
+  margin-top: 30px;
   top: 50px;
+}
+
+.header p {
+  display: block;
+  margin-left: 9px;
+  margin-bottom: 40px;
 }
 
 header {
   color: #040403;
-  font-size: 20pt;
+  font-size: 23pt;
   font-weight: bold;
+  text-align: center;
 }
 
 .button-container {
@@ -126,7 +136,7 @@ header {
 }
 
 a {
-  color: #5988ba;
+  color: #3f6894;
   position: relative;
   text-decoration: none;
 }
@@ -207,11 +217,12 @@ a:after {
 
 .response {
   color: #040403;
-  margin-bottom: 30px;
+  font-size: 16pt;
+  margin-top: 30px;
 }
 
 .response.win {
-  color: #0cce6b;
+  color: #239b5d;
 }
 
 .response.lose {

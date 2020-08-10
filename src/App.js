@@ -269,6 +269,9 @@ class App extends Component {
             It doesn't always win, but it's trying it's best!
           </p>
         </div>
+        <span className="response">
+          {this.state.response}
+        </span>
         <div className="button-container">
           <button className="choice-button" onClick={e => this.button_clicked(e,"rock")}>
             <img src={rock} alt="rock"/>
@@ -280,9 +283,7 @@ class App extends Component {
             <img src={scissors} alt="scissors"/>
           </button> 
         </div>
-        <span className="response">
-          {this.state.response}
-        </span>
+        
         <div className="win-loss-container">
           <span>
             Wins: {this.state.wins}
